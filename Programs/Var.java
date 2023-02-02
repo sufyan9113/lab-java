@@ -5,8 +5,7 @@
        
          int a=5;
         
-         int b;
-         b= a++ + ++a + a++ + ++a + --a + a--;
+         int b=6;
 
        
          System.out.println(a);
