@@ -1,8 +1,7 @@
  class ConditionalOperator {
-
     public static void main(String[]args){
-     
-        int age=18;
+ 
+        int age=88;
         if(age>=18 && age <60){
             if(age >=18 && age <20){
                 System.out.println("you are in early 20's");
@@ -31,5 +30,7 @@
             System.out.println("you are kid");
         }
     }
-    
 }
+    
+
+
