@@ -9,6 +9,7 @@
             System.out.println("2.for subtraction");
             System.out.println("3.for multiplication");
             System.out.println("4.for average");
+    
             Scanner in= new Scanner(System.in);
             menu= in. nextInt();
             
@@ -51,9 +52,12 @@
                 System.out.println("the avg of "+g+" and "+h+ " = "+avg);
                 break;
 
+              
+
+
                 default:
                 {
-                    System.out.println("invalid enter num between 1 to 4");
+                    System.out.println("invalid enter num between 1 to 5");
                 }
             }
 
