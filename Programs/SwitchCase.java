@@ -2,6 +2,7 @@
  class SwitchCase {
 
         public static void main(String[]args){
+            while(true){
             int menu;
             System.out.println("choose below menu");
             System.out.println("1.for addion");
@@ -37,22 +38,24 @@
                 e= in.nextInt();
                 f= in.nextInt();
                 mul=e*f;
-                System.out.println("the subtraction of "+e+" and "+f+ " = "+mul);
+                System.out.println("the multiplication of "+e+" and "+f+ " = "+mul);
                 break;
 
                 case 4 : 
-                int g,h,avg;
+                int g,h;
+                float avg;
                 System.out.println("enter two number");
                 g= in.nextInt();
                 h= in.nextInt();
-                avg=(g+h)/2;
-                System.out.println("the subtraction of "+g+" and "+h+ " = "+avg);
+                avg=(float)(g+h)/2;
+                System.out.println("the avg of "+g+" and "+h+ " = "+avg);
                 break;
 
                 default:
                 {
-                    System.out.println("enter num between 1 to 4");
+                    System.out.println("invalid enter num between 1 to 4");
                 }
+            }
 
             }
         
