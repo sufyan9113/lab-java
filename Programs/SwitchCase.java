@@ -57,7 +57,7 @@
 
                 default:
                 {
-                    System.out.println("invalid enter num between 1 to 5");
+                    System.out.println("invalid-enter num between 1 to 5");
                 }
             }
 
