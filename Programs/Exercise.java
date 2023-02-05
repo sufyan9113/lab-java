@@ -1,6 +1,56 @@
  import java.util.Scanner;
  class Exercise {
     public static void main(String[]args){
+
+        int num;
+        Scanner in= new Scanner(System.in);
+        System.out.println("enter number");
+        num= in. nextInt();
+
+        for(int i=1; i<=num; i++){
+            if (!(num%i==0)){
+                continue;
+            }
+            System.out.print(i+" ");
+        }
+
+       /* for(int i=1; i<=100; i++){
+            if (i%3==0){
+                continue;
+            }
+            System.out.print(i+ " ");
+        }
+
+
+    /*    for(int i=0; i<5; i++){
+            if (i==3){
+                continue;
+            }
+            System.out.print(i+ " ");
+        }
+
+      /*  int num,i,count;
+        System.out.println("enter number");
+        Scanner in= new Scanner(System.in);
+        num= in. nextInt();
+
+        for(i=2; i<num; i++){
+            if(num%i==0){
+                break;
+            }
+        }
+        if(i==num){
+            System.out.println(num +" is Prime Number");
+        }
+        else{
+            System.out.println(num +" is Non Prime Number");
+        }
+       
+
+        
+        
+        
+        /*
         int i;
         for( i=1; i<=100; i++){
             if(i%5==0 && i%7==0){
@@ -10,7 +60,7 @@
         }
         System.out.println(i);
 
-        for(int i=1; i<=3; i++){
+         /* for(int i=1; i<=3; i++){
             for (int j=1; j<=3; j++){ 
             System.out.print(j+" ");
             if(i==j)
