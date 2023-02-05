@@ -1,3 +1,4 @@
+package Operators;
 public class Turnary {
 
     public static void main(String[]args){
