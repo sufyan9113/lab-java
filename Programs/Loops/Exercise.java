@@ -4,7 +4,7 @@ package Loops;
     public static void main(String[]args){
 
         int num;
-        Scanner in= new Scanner(System.in);
+        Scanner in = new Scanner(System.in);
         System.out.println("enter number");
         num= in. nextInt();
 
