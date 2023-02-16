@@ -102,16 +102,9 @@ class Umpire
 
         else if(numFromGuesser==numFromPlayer3)
         {
-        if(numFromGuesser==numFromPlayer1)
-        {
-        System.out.println("Player 1 and Player 3 Won"); 
-        }
-        else
-        {
         System.out.println("Player 3 Won");
         }
-        }
-
+        
         else
         {
         System.out.println("All Lost");  
