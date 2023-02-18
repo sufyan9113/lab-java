@@ -1,17 +1,14 @@
 package String;
 
-import java.net.SocketPermission;
-
-import UserInput.Print;
-
 public class StringCreate 
 {
     public static void main(String[] args) 
     {
 
-        byte[] a={10,20,30};
+        char[] a={97,98,100};
         String s= new String(a);
         System.out.println(s);
+
     /*   String s= new String();
         System.out.println(s);
 
