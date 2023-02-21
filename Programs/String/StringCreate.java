@@ -4,7 +4,7 @@ public class StringCreate
 {
     public static void main(String[] args) 
     {
-
+        
         char[] a={97,98,100};
         String s= new String(a);
         System.out.println(s);
