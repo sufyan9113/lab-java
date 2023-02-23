@@ -3,7 +3,7 @@ public class Pangram
     public static void main(String[] args) 
     {
         boolean flag=false;
-        String s1="THE QUICK BROWN FOX JUMPS OVER THE LZY DOG";
+        String s1="THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG";
 
         s1=s1.replace(" ", "");
    
@@ -28,6 +28,11 @@ public class Pangram
 
         if(flag==false){
             System.out.println(" Pangram");
+        }
+
+        for(int i=0; i<a.length; i++)
+        {
+            System.out.print(a[i]+ " ");
         }
         
     }
