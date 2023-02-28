@@ -1,3 +1,4 @@
+package Practice;
 public class Pangram 
 {
     public static void main(String[] args) 
