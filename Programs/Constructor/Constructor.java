@@ -4,8 +4,12 @@ public class Constructor
 {
     public static void main(String[]args)
     {
-        Student s1=new Student(18,"sgfag");
-        Student s2=new Student(20,"gagfa");
+        Student s1=new Student(18,"sufyan");
+        Student s2=new Student(20,"navin");
+
+        System.out.println(s1.getAge()+" "+s1.getName());
+
+        
     }
 
     
@@ -18,5 +22,13 @@ class Student{
     {
         this.age=age;
         this.name=name;
+    }
+    public int getAge()
+    {
+        return age;
+    }
+    public String getName()
+    {
+        return name;
     }
 }
