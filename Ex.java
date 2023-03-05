@@ -1,19 +1,21 @@
 public class Ex {
 
     public static void main(String[] args) {
-        Student s1= new Student();
-        System.out.println(s1.age);
+
+        String str1 = "include";
+
+        String str2 = "help";
+   
+         System.out.println(str1 + str2);
         
-        
-    }
+
     
-}
-
-class Student{
-    int age;
-
-    int Student(){
-         age=15;
-        return age;
     }
+   
 }
+
+
+
+    
+
+        
