@@ -1,4 +1,5 @@
-public class Prac 
+package Practice;
+public class Prac3
 {
     public static void main(String[] args) 
     {
@@ -34,7 +35,7 @@ class Student
     }
 
     Student(int age){
-        this();
+        this(10,"sufyan");
         
         this.age=age;
         name="sufyan2";
