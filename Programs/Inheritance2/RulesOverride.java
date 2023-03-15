@@ -1,4 +1,4 @@
-package Programs.Inheritance;
+package Programs.Inheritance2;
 
 class Parents
 {

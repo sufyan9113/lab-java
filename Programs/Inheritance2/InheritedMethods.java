@@ -1,4 +1,8 @@
-package Programs.Inheritance;
+package Programs.Inheritance2;
+
+import Programs.Inheritance2.Aeroplane;
+import Programs.Inheritance2.CargoPlane;
+import Programs.Inheritance2.PassengerPlane;
 
 class Aeroplane
 {
