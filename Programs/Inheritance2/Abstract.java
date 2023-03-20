@@ -1,7 +1,7 @@
 package Inheritance2;
 
 // final abstract class Animals // if class is declared as final it can not be inherited
-abstract class Animals
+abstract class Animals // object of abstract class cannot be created as it has incomplete method
 {
     //abstract final void sleep(); // if a method is declared as final it can be inherited by can not be ovverride
     final int age=10;
@@ -40,6 +40,6 @@ class Abstract
         Animals t= new Tiger();
         t.eat();
         t.sleep();
-        ((Tiger) t).run();
+        ((Tiger) t).run(); // specialised method cannot be access directly by parent class ref. so temp behaviour of parent class ref. is to be changed
     }
 }
