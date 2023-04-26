@@ -4,7 +4,7 @@ interface A2
 {
    // void show();
      // void show(int age);
-    void show(int age,int num);
+    void show(int age,int num,int code);
 
 }
 
@@ -22,12 +22,13 @@ public class Lambda
         obj.show(18);
         */
 
-         A2 obj= (age,num) ->
+         A2 obj= (age,num,code) ->
         {
             System.out.println(age);
             System.out.println(num);
+            System.out.println(code);
         };
-        obj.show(18,113);
+        obj.show(18,113,4588);
         
     }
 }
