@@ -30,7 +30,7 @@ public class Exception2
             System.out.println(ar[ar.length-1]);
             System.out.println("array limit exceed");
         }
-        catch(Exception e)
+        catch(ExceptionH e)
         {
             System.out.println("something went wrong");
         }

@@ -1,5 +1,5 @@
 import java.util.*;
-class Test
+class TestExcep
 {
     public static void main(String[] args) 
     {
@@ -27,6 +27,10 @@ class Test
         catch(Exception e)
         {
             System.out.println("something is wrong");
+        }
+        finally
+        {
+            System.out.println("in finally block");
         }
       
         

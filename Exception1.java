@@ -1,30 +1,39 @@
 
-public  class Exception1 
+
+public class Exception1
 {
     public static void main(String[] args) 
     {
-        int a=10;   // normal statement
-        //int b=5;    // normal statement
-        int b=0;
+        int a=20;
+        int b=10;
         int result=0;
+        int[] ar={10,20,30};
 
-      //  result = a/b; //critical statment
-           try              
-           {            //try to execute operation
-            result =a/b;
-            System.out.println("in try block");
-            }
+        try
+        {
+         result=a/b;
+         System.out.println(ar[3]);
 
-            catch(Exception e)      // if exception occurs it throws exception objext
-            {
-                System.out.println("something went wrong "+e);
-            }
+        }
+      
 
+        catch(ArrayIndexOutOfBoundsException e)
+        {
+            System.out.println("something is wrong in index exception "+e);
+        }
+        catch(Exception e)
+        {
+            System.out.println("something is wrong");
+        }
+        
+        finally
+        {
+            System.out.println("in final block");
+        }
+        
+        
 
-            System.out.println(result);
+        System.out.println("the division is "+ result);
 
-
-
-       
     }
 }

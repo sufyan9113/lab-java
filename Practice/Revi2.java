@@ -1,6 +1,133 @@
+package Practice;
+interface Run
+{
+     void show(int a,int b);
+}
+
+
+public class Revi2 
+{
+    public static void main(String[] args) 
+    {
+        Run obj= (a,b)->System.out.println("class implements");
+
+       obj.show(10,15);
+    }
+}
+
+/*interface Run
+{
+     void show();
+}
+public class Revi 
+{
+    public static void main(String[] args) 
+    {
+       Run a=new Run(){
+         public void show()
+        {
+            System.out.println("class implements");
+        }
+    };
+
+    a.show();
+       
+       
+    }
+}
+/*class Run
+{
+    class Inner
+    {
+        public void show()
+        {
+            System.out.println("in inner class");
+        }
+    }
+}
 
 
 
+public class Revi 
+{
+    public static void main(String[] args) 
+    {
+       
+        Run.Inner a =new Run().new Inner();
+        a.show();
+    }
+}
+
+/*interface A
+{
+    public void disp();
+
+    public void show();
+}
+
+interface C
+{
+    public void print();
+    
+}
+class B implements A,C
+{
+
+    public void disp()
+    { 
+        System.out.println("in disp");
+    }
+
+    public void show()
+    {
+        System.out.println("in show");
+    }
+    public void print()
+    {
+        System.out.println("in print");
+    }
+}
+
+public class Revi 
+{
+    public static void main(String[] args) 
+    {
+    B b=new B();
+    b.disp();
+    b.show();
+    b.print();
+
+    
+       
+    }
+}
+/*class Sum
+{
+    public void sum(int ...a)
+    {
+        for(int x: a)
+        {
+            System.out.println(x);
+        }
+    }
+}
+public class Revi 
+{
+    public static void main(String[] args) 
+    {
+    
+     
+
+      Sum s=new Sum();
+
+      s.sum(10,15,20,30);
+
+       
+   
+    
+       
+    }
+}
 /* 
 class Student
 {
