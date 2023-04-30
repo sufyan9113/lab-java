@@ -7,12 +7,12 @@ public class Nest
         
         try
         {
-            int a=10/10;
+            int a=10/0;
             try
             {
-                int b=10/0;
+                int b=10/10;
             }
-            catch(Exception e)
+            catch(ArrayIndexOutOfBoundsException e)
             {
                 System.out.println("in try2 catch");
             }
