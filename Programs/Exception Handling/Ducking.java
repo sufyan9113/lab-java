@@ -2,23 +2,15 @@
 class Method
 {
     int a,b,c,d,result1,result2;
-    public void a() throws Exception
+    public void a() 
     {
         
-       try 
-        {
-            b();
-        }
-        
-        catch(Exception e)
-        {
-            
-            System.out.println("something went wrong in a method");
            
-        }
+            b();
+            
         
     }
-    public void b() throws Exception
+    public void b() 
     {
         a=10;
         b=0;
@@ -26,9 +18,10 @@ class Method
         {
         result1= a/b;
         }
-        catch(Exception e)
+        catch(Exception e) 
         {
             System.out.println("something went wrong in b method");
+            throw e;
            
         }
         
@@ -44,15 +37,12 @@ public class Ducking
     {
         Method m= new Method();
 
-        try
-        {
+        
         m.a();
-        }
-         catch(Exception e)
-        {
-            System.out.println("something went wrong in main method");
-            
-        }
+    
+
+        
+       
         
     }
 

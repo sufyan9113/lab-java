@@ -23,7 +23,7 @@ public class Check
 {
     public static void main(String[] args) 
     {
-        Demo d= new Demo();
+        Demo5 d= new Demo5();
         try
         {
         d.test();
