@@ -1,12 +1,50 @@
-
+package Practice;
 import java.util.*;
-
-
 
 class Arraylistprac
 {
     public static void main(String[] args)
     {
+        TreeSet ad=new TreeSet();
+
+        ad.add(100);
+        ad.add(50);
+        ad.add(102);
+        ad.add(120);
+        ad.add(35);
+        ad.add(60);
+        ad.add(20);
+
+        System.out.println(ad);
+    }
+}
+
+       /*  Vector v= new Vector();
+
+        v.add(10);
+        v.add(20);
+        v.add(30);
+        v.add(40);
+
+        System.out.println(v);
+
+        Iterator i=v.iterator();
+
+        while(i.hasNext())
+        {
+            System.out.println(i.next());
+        }
+
+        Enumeration e=v.elements();
+
+        while(e.hasMoreElements())
+        {
+            System.out.println(e.nextElement());
+        }
+
+
+    }
+}
         /*
 
          ArrayList a1=new ArrayList();

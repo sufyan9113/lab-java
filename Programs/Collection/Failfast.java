@@ -19,14 +19,16 @@ public class Failfast
 
         }
 */
-       /*  Iterator i= a.iterator(); // failfast
+      /*   Iterator i1=a.iterator();
 
-        while(i.hasNext())
+        while(i1.hasNext())
         {
-            System.out.println(i.next());
-          //  a.add(100);
+            System.out.println(i1.next());
+         //   a.add(10);
         }
-*/
+        
+        */
+
        CopyOnWriteArrayList b=new CopyOnWriteArrayList(); // fail safe
 
         b.add(10);
@@ -42,6 +44,8 @@ public class Failfast
             b.add(10);
         }
         
+    
+
 
 
         
