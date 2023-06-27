@@ -1,7 +1,7 @@
 
 import java.util.*;
 
-import Practice.ExceptionH;
+import Practice.CoreJava.ExceptionH;
 
 class MyException extends Exception
 {

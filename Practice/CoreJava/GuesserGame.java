@@ -1,4 +1,4 @@
-package Projects;
+package Practice.CoreJava;
 import java.util.*;
 
 
