@@ -4,8 +4,11 @@ public class MissingNum2
 {
     public static void main(String[] args) 
     {
-       int[] a={1,2,3,5,6};
+       int[] a={1,2,2,4,5,5,7};
        int n=a.length;
+  
+    
+
        int total=1;
        
        
