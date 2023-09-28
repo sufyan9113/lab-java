@@ -1,3 +1,4 @@
+package Practice.DSA;
 import java.util.*;
 public class PermnuArray 
 {
