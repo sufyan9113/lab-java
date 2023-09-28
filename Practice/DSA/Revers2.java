@@ -1,4 +1,5 @@
-public class Cycle 
+package Practice.DSA;
+public class Revers2 
 {
     static Node head;
     public static void main(String[] args) 
@@ -8,48 +9,48 @@ public class Cycle
         insert(30);
         insert(40);
         insert(50);
+
         disp();
-        Node temp=head;
-        while(temp.next!=null)
-        {
-            temp=temp.next;
-        }
-        temp.next=head;
-        
-        cycleDetect();
-    }        
+        revIter();
+        disp();
 
-    public static void cycleDetect()
+        revRec(head, null);
+        disp();
+        
+
+    }
+    public static void revIter()
     {
-        Node fast=head;
-        Node slow=head;
-        int flag=0;
-        while(slow!=null && fast!=null && fast.next!=null)
+        Node cur=head;
+        Node pr=null;
+        Node af=null;
+
+        while(cur!=null)
         {
-            fast=fast.next.next;
-            slow=slow.next;
-
-            if(slow==fast)
-            {
-                flag=1;
-                break;
-            }
+            af=cur.next;
+            cur.next=pr;
+            pr=cur;
+            cur=af;   
         }
-            if(flag==1)
-            {
-                System.out.println("cycle detected");
+        head=pr;
+    }
 
-            }
-            else
-            {
-                System.out.println("cycle not detected");
-            }
-
-        
+    public static void revRec(Node cr,Node pr)
+    {
+       if(cr.next==null)
+       {
+            head=cr;
+            cr.next=pr;
+            return;
+       }
+       Node nextPtr=cr.next;
+       cr.next=pr;
+       revRec(nextPtr, cr);
     }
     public static void insert(int data)
     {
         Node newNode=new Node(data);
+
         if(head==null)
         {
             head=newNode;
@@ -61,8 +62,6 @@ public class Cycle
             temp=temp.next;
         }
         temp.next=newNode;
-        
-
     }
     public static void disp()
     {
@@ -74,16 +73,16 @@ public class Cycle
             temp=temp.next;
         }
         System.out.println();
-
     }
 }
+
 class Node
 {
     int data;
     Node next;
+
     Node(int data)
     {
         this.data=data;
     }
-}
-
+} 

@@ -1,53 +1,52 @@
-public class Reverse 
+package Practice.DSA;
+public class Cycle 
 {
     static Node head;
     public static void main(String[] args) 
     {
         insert(10);
         insert(20);
-        insert(30); 
+        insert(30);
         insert(40);
+        insert(50);
         disp();
-        System.out.println();
-        reverseIter();
-        disp();
-        System.out.println();
-
-        reverseRec(head,null);
-        disp();
-        System.out.println();
-
-
-    }  
-    public static void reverseIter()
-    {
-        Node curr=head;
-        Node after=null;
-        Node pre=null;
-        
-        while(curr!=null)
+        Node temp=head;
+        while(temp.next!=null)
         {
-            after=curr.next;
-            curr.next=pre;
-            pre=curr;
-            curr=after;
+            temp=temp.next;
         }
-        head=pre;
+        temp.next=head;
         
+        cycleDetect();
+    }        
 
-    }
-    public static void reverseRec(Node curr,Node pre)
+    public static void cycleDetect()
     {
-        if(curr.next==null)
+        Node fast=head;
+        Node slow=head;
+        int flag=0;
+        while(slow!=null && fast!=null && fast.next!=null)
         {
-          head=curr;  
-            curr.next=pre;
-            return;
-        }
-        Node nextPtr=curr.next;
-        curr.next=pre;
-        reverseRec(nextPtr,curr);
+            fast=fast.next.next;
+            slow=slow.next;
 
+            if(slow==fast)
+            {
+                flag=1;
+                break;
+            }
+        }
+            if(flag==1)
+            {
+                System.out.println("cycle detected");
+
+            }
+            else
+            {
+                System.out.println("cycle not detected");
+            }
+
+        
     }
     public static void insert(int data)
     {
@@ -63,6 +62,8 @@ public class Reverse
             temp=temp.next;
         }
         temp.next=newNode;
+        
+
     }
     public static void disp()
     {
@@ -86,3 +87,4 @@ class Node
         this.data=data;
     }
 }
+

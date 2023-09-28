@@ -1,3 +1,4 @@
+package Practice.DSA;
 public class Middle 
 {
     static Node head;

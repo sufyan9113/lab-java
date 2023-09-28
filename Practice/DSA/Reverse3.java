@@ -1,3 +1,4 @@
+package Practice.DSA;
 public class Reverse3 
 {
     static Node head;

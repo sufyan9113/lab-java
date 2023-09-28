@@ -1,3 +1,4 @@
+package Practice.DSA;
 public class LLInsert 
 {   
     Node head;
